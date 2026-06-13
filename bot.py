@@ -23,9 +23,9 @@ for repo in repos:
 json_content = json.dumps(projects, indent=4)
 
 # Update portfolio repository
-print("PAT exists:", os.getenv("PAT_TOKEN") is not None)
+
 TOKEN = os.getenv("PAT_TOKEN")
-print("PAT length:", len(TOKEN) if TOKEN else 0)
+
 
 headers = {
     "Authorization": f"token {TOKEN}",
@@ -37,8 +37,7 @@ repo_api = "https://api.github.com/repos/bharathchandranbcet29/portfolio/content
 # Get current file SHA
 response = requests.get(repo_api, headers=headers)
 
-print(response.status_code)
-print(response.text)
+
 
 current = response.json()
 
