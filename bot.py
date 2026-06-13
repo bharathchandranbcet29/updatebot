@@ -33,7 +33,12 @@ headers = {
 repo_api = "https://api.github.com/repos/bharathchandranbcet29/portfolio/contents/projects.json"
 
 # Get current file SHA
-current = requests.get(repo_api, headers=headers).json()
+response = requests.get(repo_api, headers=headers)
+
+print(response.status_code)
+print(response.text)
+
+current = response.json()
 
 payload = {
     "message": "Auto update projects.json",
