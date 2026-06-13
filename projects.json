@@ -1,17 +1,22 @@
 [
     {
         "title": "newsbot",
-        "description": null,
+        "description": "Daily news digest bot that collects headlines from multiple sources and sends HTML email reports.",
         "github": "https://github.com/bharathchandranbcet29/newsbot"
     },
     {
         "title": "task-bot",
-        "description": null,
+        "description": "Automated task reminder bot built with Python and scheduled using GitHub Actions.",
         "github": "https://github.com/bharathchandranbcet29/task-bot"
     },
     {
+        "title": "updatebot",
+        "description": "Portfolio updater that fetches GitHub repositories via API and generates projects.json automatically.",
+        "github": "https://github.com/bharathchandranbcet29/updatebot"
+    },
+    {
         "title": "weatherbot",
-        "description": null,
+        "description": "Weather monitoring bot using OpenWeather API, email alerts, and GitHub Actions automation.",
         "github": "https://github.com/bharathchandranbcet29/weatherbot"
     }
 ]
