@@ -11,16 +11,13 @@ repos = requests.get(url).json()
 
 projects = []
 
-repos.sort(
-    key=lambda x: x["updated_at"],
-    reverse=True
-)
+
 
 for repo in repos:
 
     if repo["name"] == "portfolio":
         continue
-    
+
     projects.append(
         {
             "title": repo["name"],
