@@ -23,7 +23,9 @@ for repo in repos:
 json_content = json.dumps(projects, indent=4)
 
 # Update portfolio repository
+print("PAT exists:", os.getenv("PAT_TOKEN") is not None)
 TOKEN = os.getenv("PAT_TOKEN")
+print("PAT length:", len(TOKEN) if TOKEN else 0)
 
 headers = {
     "Authorization": f"token {TOKEN}",
